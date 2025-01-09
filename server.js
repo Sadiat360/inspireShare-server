@@ -1,6 +1,7 @@
 import express from 'express';
 import stressQuoteRoutes from './routes/stressQuoteRoutes.js'
 import loveQuoteRoutes from './routes/loveQuoteRoutes.js'
+import photosRoutes from './routes/photosRoutes.js'
 import 'dotenv/config';
 import cors from 'cors';
 
@@ -17,6 +18,8 @@ app.use(cors());
 
 app.use('/stressQuote',stressQuoteRoutes);
 app.use('/loveQuote',loveQuoteRoutes);
+app.use('/photos',photosRoutes);
+app.use(express.static('public'));
 
 app.listen(PORT, () =>{
     console.log(`Server running at ${process.env.BACKEND_URL}${PORT} `)
