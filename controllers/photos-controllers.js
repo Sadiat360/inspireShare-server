@@ -4,8 +4,8 @@ import crypto from 'crypto';
 
 const server = async (req, res) => {
     try{
-        const filePath = path.resolve('data/photos.json');
-        const dataBuffer = fs.readFileSync(filePath);
+        // const filePath = path.resolve('./data/photos.json');
+        const dataBuffer = fs.readFileSync('./data/photos.json');
         const photosData = JSON.parse(dataBuffer);
         if(photosData.length === 0){
             res.status(404).send('Photos not found');
@@ -22,11 +22,13 @@ const server = async (req, res) => {
 }
 const findPhoto = async (req, res) => {
     try{
+       
+
         console.log(`Fetching photo with ID: ${req.params.photoId}`);
-        const filePath = path.resolve('data/photos.json');
-        const dataBuffer = fs.readFileSync(filePath);
+        const dataBuffer = fs.readFileSync('./data/photos.json');
         const photosData= JSON.parse(dataBuffer);
 
+        const photoId = req.params.photoId;
         const foundPhoto = photosData.find((photo)=>{
             return photo.id === req.params.photoId;
         })
@@ -36,7 +38,7 @@ const findPhoto = async (req, res) => {
         }
        
         const photoUrl = `/public/${foundPhoto.photo}`;
-        res.status(200).json(foundPhoto);
+        res.status(200).json({...foundPhoto, photoUrl});
         console.log(foundPhoto);
 
     }catch(error){
@@ -46,6 +48,6 @@ const findPhoto = async (req, res) => {
 }
 
 export {
-server,
-findPhoto
+  server,
+  findPhoto
 }

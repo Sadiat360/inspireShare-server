@@ -4,7 +4,7 @@ import crypto from 'crypto';
 
 const server = async (_req, res) => {
     try{
-        const filePath = path.resolve('quotesData/stressQuotes.json');
+        const filePath = path.resolve('data/stressQuotes.json');
         const dataBuffer = fs.readFileSync(filePath);
         const stressQuotesData = JSON.parse(dataBuffer);
         if(stressQuotesData.length === 0){
@@ -21,7 +21,7 @@ const server = async (_req, res) => {
 }
 const findRandomstressQuote = async (_req, res) => {
     try{
-        const filePath = path.resolve('quotesData/stressQuotes.json');
+        const filePath = path.resolve('data/stressQuotes.json');
         const dataBuffer = fs.readFileSync(filePath);
         const stressQuotesData = JSON.parse(dataBuffer);
         if(stressQuotesData.length === 0){

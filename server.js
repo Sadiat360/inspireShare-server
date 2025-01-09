@@ -15,11 +15,12 @@ const app = express();
 const PORT = process.env.PORT || 5050;
 
 app.use(cors());
+app.use(express.static('public'));
 
 app.use('/stressQuote',stressQuoteRoutes);
 app.use('/loveQuote',loveQuoteRoutes);
 app.use('/photos',photosRoutes);
-app.use(express.static('public'));
+
 
 app.listen(PORT, () =>{
     console.log(`Server running at ${process.env.BACKEND_URL}${PORT} `)
