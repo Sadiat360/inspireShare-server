@@ -1,0 +1,20 @@
+[
+    {
+        "id": "9dc4fb8f-1478-4a98-872c-866faf960b26",
+        "photo": "hero.png",
+        "title": "I AM because WE ARE, since we ARE, therefore I AM",
+        "subtitle": "John Samuel Mbiti (1931-2019)"
+    },
+    {
+        "id": "e8e3715d-ffac-4752-8333-023ba1c83412",
+        "photo": "2ndHero.png",
+        "title": "As we let our own light shine, we unconsciously give other people permission to do the same.",
+        "subtitle": "Nelson Mandela"
+    },
+    {
+        "id": "d5cb7a8d-d175-4599-98ff-8a172f3028dc",
+        "photo": "3rdhero.png",
+        "title": "The greatest healing therapy is friendship and love.",
+        "subtitle": "– Hubert H. Humphrey"
+    }
+]

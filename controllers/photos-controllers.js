@@ -37,8 +37,8 @@ const findPhoto = async (req, res) => {
             return;
         }
        
-        const photoUrl = `/public/${foundPhoto.photo}`;
-        res.status(200).json({...foundPhoto, photoUrl});
+       
+        res.status(200).json(foundPhoto);
         console.log(foundPhoto);
 
     }catch(error){
