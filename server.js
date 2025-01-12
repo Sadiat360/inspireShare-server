@@ -3,6 +3,7 @@ import stressQuoteRoutes from './routes/stressQuoteRoutes.js'
 import loveQuoteRoutes from './routes/loveQuoteRoutes.js'
 import photosRoutes from './routes/photosRoutes.js'
 import heroImageRoutes from './routes/heroImageRoutes.js'
+import faqQuestionRoutes from './routes/faqQuestionRoutes.js'
 import 'dotenv/config';
 import cors from 'cors';
 
@@ -23,6 +24,7 @@ app.use('/stressQuote',stressQuoteRoutes);
 app.use('/loveQuote',loveQuoteRoutes);
 app.use('/photos',photosRoutes);
 app.use('/hero',heroImageRoutes);
+app.use('/faq',faqQuestionRoutes);
 
 
 app.listen(PORT, () =>{
