@@ -6,6 +6,7 @@ import heroImageRoutes from './routes/heroImageRoutes.js'
 import faqQuestionRoutes from './routes/faqQuestionRoutes.js'
 import 'dotenv/config';
 import cors from 'cors';
+import crypto from 'crypto';
 
 /////for production deployment
 /////app.use(cors({ origin: 'http://your-frontend-domain.com' }));
@@ -15,6 +16,9 @@ import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 5050;
+const jwtSecret = process.env.JWT_SECRET;
+// const secretKey = crypto.randomBytes(64).toString('hex');
+// console.log(secretKey);
 
 app.use(cors());
 app.use(express.json());
@@ -25,6 +29,7 @@ app.use('/loveQuote',loveQuoteRoutes);
 app.use('/photos',photosRoutes);
 app.use('/hero',heroImageRoutes);
 app.use('/faq',faqQuestionRoutes);
+app.use('/streaks',faqQuestionRoutes);
 
 
 app.listen(PORT, () =>{
