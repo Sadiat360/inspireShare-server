@@ -5,6 +5,7 @@ import photosRoutes from './routes/photosRoutes.js'
 import heroImageRoutes from './routes/heroImageRoutes.js'
 import faqQuestionRoutes from './routes/faqQuestionRoutes.js'
 import usersRoutes from './routes/usersRoutes.js'
+import categoryImgRoutes from './routes/categoryImgRoutes.js'
 import 'dotenv/config';
 import cors from 'cors';
 import crypto from 'crypto';
@@ -37,6 +38,7 @@ app.use('/hero',heroImageRoutes);
 app.use('/faq',faqQuestionRoutes);
 app.use('/streaks',faqQuestionRoutes);
 app.use('/users',usersRoutes);
+app.use('/category',categoryImgRoutes);
 
 app.get('/', (req, res) => {
     res.send('Welcome to Inspire-Share Server');
