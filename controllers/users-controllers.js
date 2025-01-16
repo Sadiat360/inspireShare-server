@@ -104,7 +104,8 @@ const registerUser = async (req, res) => {
     
   const getProfile =  async (req, res) => {
     try{
-       const user = await knex ('users').where({id: req.token.id}).first();
+       const user = await knex ('users').where({userId: req.token.id}).first();
+       console.log('user:', user)
        res.json(user);
     }catch (error){
        res.status(500).json({message: "Can't fetch user profile"});

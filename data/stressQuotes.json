@@ -1,27 +1,52 @@
 [
     {
-      "id": "1",
+      "id": "8c239e4a-0334-4d7d-be33-84d251774295",
       "title": "Let Go",
       "message": "You can’t control everything. Sometimes you just need to relax and have faith that things will work out. Let go a little and just let life happen."
     },
     {
-      "id": "2",
-      "title": "Let Go",
+      "id": "378c4f7d-8deb-40ad-88ce-c05b209bd8be",
+      "title": "Breathe",
       "message": "Worrying does not take away tomorrow’s troubles. It takes away today’s peace"
     },
     {
-      "id": 3,
+      "id": "3ed7cb7e-f55e-476d-9af0-74735b86ad07",
       "title": "Inner Strength",
       "message": "Anxiety happens when you think you have to figure out everything all at once. Breathe. You’re strong. You’ve got this. Take it day by day."
     },
     {
-      "id": 4,
+      "id": "4194b438-0751-4bd0-a7a5-75cc99f3e9c3",
       "title": "Trust the process",
       "message": "Turn your worry into worship and watch God turn your battles into blessings."
     },
     {
-      "id": 5,
+      "id": "3e14da83-4320-4dc1-ba9a-3dfc31e5ed68",
       "title": "Trust the process",
       "message": "Sometimes, all you need is a different perspective to see that things aren’t as bad as they seem."
+    },
+    {
+      "id": "5a8f53a2-54bb-4bf7-bfa3-d62059d6ef4a",
+      "title": "Okay not to be okay",
+      "message": "You don't have to control your thoughts. You just have to stop letting them control you"
+    },
+    {
+      "id": "b2501160-23a2-41bc-9a21-54089b3e6eeb",
+      "title": "One day at a time",
+      "message": "Take it one day at a time. Don’t stress yourself out about what’s to come."
+    },
+    {
+      "id": "5e8d33c0-a13c-45af-8258-84d575a62c4c",
+      "title": "In the Midst of Chaos",
+      "message": "The greatest weapon against stress is our ability to choose one thought over another."
+    },
+    {
+      "id": "7884619f-7f9f-4838-8e75-990696d8ac1e",
+      "title": "Embracing the Present",
+      "message": "You can't always control what goes on outside, but you can always control what goes on inside."
+    },
+    {
+      "id": "333801de-448b-493e-b4f4-cd7831057271",
+      "title": "Stillness in Motion",
+      "message": "Sometimes you have to let go of the life you planned to make room for the life that is waiting for you."
     }
 ]

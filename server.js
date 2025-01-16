@@ -6,6 +6,7 @@ import heroImageRoutes from './routes/heroImageRoutes.js'
 import faqQuestionRoutes from './routes/faqQuestionRoutes.js'
 import usersRoutes from './routes/usersRoutes.js'
 import categoryImgRoutes from './routes/categoryImgRoutes.js'
+import userStreakRoutes from './routes/userStreakRoutes.js'
 import 'dotenv/config';
 import cors from 'cors';
 import crypto from 'crypto';
@@ -25,10 +26,10 @@ const corsOptions = {
   };
 
 // const secretKey = crypto.randomBytes(64).toString('hex');
-// console.log(secretKey);
+// console.log(secretKey); ///
 
 app.use(cors(corsOptions));
-app.use(express.json());
+app.use(express.json({limit: '10mb'}));
 app.use(express.static('public'));
 
 app.use('/stressQuote',stressQuoteRoutes);
@@ -36,7 +37,7 @@ app.use('/loveQuote',loveQuoteRoutes);
 app.use('/photos',photosRoutes);
 app.use('/hero',heroImageRoutes);
 app.use('/faq',faqQuestionRoutes);
-app.use('/streaks',faqQuestionRoutes);
+app.use('/streaks',userStreakRoutes);
 app.use('/users',usersRoutes);
 app.use('/category',categoryImgRoutes);
 

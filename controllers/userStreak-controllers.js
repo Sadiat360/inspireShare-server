@@ -33,7 +33,8 @@ const findUserStreak = async (req, res) => {
 }
 
 const updateUserStreak = async (req, res) => {
-    const userId = req.user_id;
+    const userId = req.params.user_id;
+    console.log('what is userId:',userId)
     const { streakCount, lastInteraction } = req.body;
   
     try {
