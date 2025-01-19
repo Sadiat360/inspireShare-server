@@ -15,7 +15,7 @@ const authorise = async (req ,res, next) => {
     try{
         const decodedToken = jwt.verify(token, JWT_SECRET);
 
-        req.user_id = decodedToken;
+        req.token = decodedToken;
         next();
     }catch(error){
         return res.status(401).json({message: 'The authentication token is invalid'});
