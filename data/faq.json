@@ -1,0 +1,31 @@
+[
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174001",
+        "question": "How can I provide emotional support to someone?",
+        "answer": "Listen actively, validate their feelings, avoid judgment, and offer reassurance. Sometimes, just being present is more valuable than offering solutions."
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174002",
+        "question": "Why is emotional support important?",
+        "answer": "It helps people feel valued, understood, and less alone during difficult times. Emotional support can improve mental health, foster resilience, and strengthen relationships."
+        
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174003",
+        "question": "What are some signs that someone needs emotional support?",
+        "answer": "They may show signs of stress, anxiety, or withdrawal, or express feelings of sadness, overwhelm, or isolation. Changes in behavior, mood, or communication are often indicators."
+        
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174004",
+        "question": "What if the person I’m supporting needs professional help?",
+        "answer": "Encourage them to seek therapy or counseling if their situation seems severe or beyond your ability to help. Offer to assist them in finding resources or professionals."
+        
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174005",
+        "question": "Is it okay to set boundaries while offering emotional support?",
+        "answer": "Yes, setting boundaries is essential to ensure your own well-being. You can support someone while making it clear what you can and cannot handle emotionally."
+        
+    }
+]

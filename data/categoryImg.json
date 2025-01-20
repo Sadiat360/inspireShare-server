@@ -1,0 +1,25 @@
+[
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174006",
+        "photo": "anxiety.png",
+        "title": "Stress & Anxiety"
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174007",
+        "photo": "redhrt.png",
+        "title": "Love & Relationship"
+        
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174008",
+        "photo": "depression.png",
+        "title": "Depression & Negative Thinking"
+       
+    },
+    {
+        "id": "123e4567-e89b-12d3-a456-426614174009",
+        "photo": "motivate.png",
+        "title": "Motivation & Productivity"
+       
+    }
+]
