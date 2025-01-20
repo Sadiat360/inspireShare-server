@@ -3,7 +3,7 @@ import * as stressQuotesController from '../controllers/stressQuotes-controllers
 
 const router = express.Router()
 
-router.route('/').get(stressQuotesController.server)
+router.route('/').get(stressQuotesController.server);
 router.route('/stressQuote').get(stressQuotesController.findRandomstressQuote)
 
 export default router;

@@ -3,7 +3,6 @@ import * as faqQuestionControllers from '../controllers/faqQuestion-controllers.
 
 const router = express.Router()
 
-router.route('/').get(faqQuestionControllers.server)
-// router.route('/stressQuote').get(loveQuotesController.findRandomloveQuote)
+router.route('/').get(faqQuestionControllers.server);
 
 export default router;

@@ -1,10 +1,9 @@
 import fs from 'fs';
-import path from 'path';
-import crypto from 'crypto';
 
+
+///// get all photos
 const server = async (req, res) => {
     try{
-        // const filePath = path.resolve('./data/photos.json');
         const dataBuffer = fs.readFileSync('./data/photos.json');
         const photosData = JSON.parse(dataBuffer);
         if(photosData.length === 0){
@@ -20,6 +19,8 @@ const server = async (req, res) => {
         res.status(500).send('Internal Server Error')
     }
 }
+
+///// find a single photo
 const findPhoto = async (req, res) => {
     try{
        

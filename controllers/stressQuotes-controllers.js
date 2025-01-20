@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
-import crypto from 'crypto';
 
+///// get all stress quotes
 const server = async (_req, res) => {
     try{
         const filePath = path.resolve('data/stressQuotes.json');
@@ -19,6 +19,7 @@ const server = async (_req, res) => {
         res.status(500).send('Internal Server Error')
     }
 }
+///// get random stress quote
 const findRandomstressQuote = async (_req, res) => {
     try{
         const filePath = path.resolve('data/stressQuotes.json');

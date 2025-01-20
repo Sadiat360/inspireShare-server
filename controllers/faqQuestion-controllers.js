@@ -11,7 +11,6 @@ const server = async (req, res) => {
         }
 
         res.status(200).json(faqQuestionData);
-        console.log(faqQuestionData);
 
     }catch(error){
         console.error('error getting photo:', error);

@@ -9,10 +9,6 @@ const knex = initKnex(knexConfig);
 const SALT_ROUNDS = 8;
 const jwtSecret = process.env.JWT_SECRET;
 
-////// old token-----3cb49d1f6c1a887df4a36c93535106b3eee8bb70c7e63fc04ff4f8
-// 984ba41d6154bb1717c8f6c1f6e1bf9bfdd93a8354ba01a640b836
-// 3b9074239b960aa7b041
-
 const server = async (req, res) => {
     try{
         console.log('welcome to users')
@@ -56,7 +52,7 @@ const registerUser = async (req, res) => {
 
   };
 
-  /// log in user
+  ////// log in user
 
   const loginUser = async ( req, res) => {
     const {  email, password } = req.body;
@@ -69,7 +65,7 @@ const registerUser = async (req, res) => {
 
     try{
         const user = await knex('users')
-        .where({email}) //// probably change to just email
+        .where({email}) 
         .first();
         
         if(!user){
@@ -81,9 +77,7 @@ const registerUser = async (req, res) => {
     if (!isPasswordCorrect) {
       return res.status(400).json({ error: 'Invalid password' });
     }
-
-    console.log('JWT_SECRET:', jwtSecret);
-       ///generate JWT token
+    
     const token = jwt.sign({ 
       id: user.id }, 
       jwtSecret, 
@@ -101,7 +95,7 @@ const registerUser = async (req, res) => {
     
   };
 
-    
+  ////// get user profile
   const getProfile =  async (req, res) => {
     try{
        const user = await knex ('users').where({id: req.token.id}).first();

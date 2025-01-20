@@ -5,7 +5,6 @@ const knex = initKnex(configuration);
 
 const server = async (req, res) => {
     try{
-        console.log('welcome to user streak')
         const streaks = await knex('user_streaks')
         .select('*')
         res.status(200).json(streaks);
@@ -34,21 +33,19 @@ const findUserStreak = async (req, res) => {
 
 const updateUserStreak = async (req, res) => {
     const userId = req.params.user_id;
-    console.log('what is userId:',userId)
     const { streakCount, lastInteraction } = req.body;
   
     try {
       const streak = await knex('user_streaks').where({ user_id: userId }).first();
   
       if (streak) {
-        // Update existing streak
         await knex('user_streaks')
           .where({ user_id: userId })
           .update({ streak_count: streakCount, last_interaction: lastInteraction });
   
         res.json({ message: 'Streak updated successfully', streakCount, lastInteraction });
       } else {
-        // Insert new streak for the user
+
         await knex('user_streaks').insert({ user_id: userId, streak_count: streakCount, last_interaction: lastInteraction });
   
         res.status(201).json({ message: 'Streak created successfully', streakCount, lastInteraction });

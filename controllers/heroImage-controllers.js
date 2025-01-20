@@ -1,10 +1,8 @@
 import fs from 'fs';
-import path from 'path';
-import crypto from 'crypto';
+
 
 const server = async (req, res) => {
     try{
-        // const filePath = path.resolve('./data/photos.json');
         const dataBuffer = fs.readFileSync('./data/hero.json');
         const heroData = JSON.parse(dataBuffer);
         if(heroData.length === 0){
