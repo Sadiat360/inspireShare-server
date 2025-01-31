@@ -12,7 +12,7 @@ const server = async (req, res) => {
         }
 
         res.status(200).json(photosData);
-        console.log(photosData);
+       
 
     }catch(error){
         console.error('error getting photo:', error);
@@ -40,8 +40,7 @@ const findPhoto = async (req, res) => {
        
        
         res.status(200).json(foundPhoto);
-        console.log(foundPhoto);
-
+        
     }catch(error){
         console.error('error getting photo:', error);
         res.status(500).send('Internal Server Error')

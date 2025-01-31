@@ -11,7 +11,7 @@ const server = async (req, res) =>{
             return;
         } else{
             res.status(200).json(categoryImgData);
-            console.log(categoryImgData)
+            
         }
 
     }catch(error){
