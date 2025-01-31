@@ -88,8 +88,8 @@ const registerUser = async (req, res) => {
       //// setting HTTP-only cookie
       res.cookie('token', token, {
         httpOnly: true,
-        secure: false, /////true for deploy
-        sameSite: 'lax', ///'None' for production
+        secure: true, /////true for deploy
+        sameSite: 'None', ///'None' for production
         maxAge: 3600000,
       })
      
@@ -113,8 +113,8 @@ const registerUser = async (req, res) => {
             console.log("Token in request cookies:", req.cookies.token);
             res.clearCookie('token',{
               httpOnly: true,
-              secure: false,
-              sameSite: 'lax'
+              secure: true,
+              sameSite: 'None'
             });
             if (!req.cookies.token) {
               return res.status(401).json({ message: 'No token found, unauthorized' });
