@@ -20,7 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 5050;
 const jwtSecret = process.env.JWT_SECRET;
 const corsOptions = {
-    origin: 'http://localhost:5173', // Default to localhost for dev ////'https://inspireshare.netlify.app'
+    origin: 'https://inspireshare.netlify.app', // Default to localhost for dev ////
     credentials: true,
   };
 
