@@ -57,6 +57,11 @@ const registerUser = async (req, res) => {
   ////// log in user
 
   const loginUser = async ( req, res) => {
+    console.log(process.env.DB_NAME)
+    console.log(process.env.DB_PORT)
+    console.log(process.env.DB_HOST)
+    console.log(process.env.DB_USER)
+    console.log(process.env.DB_PASSWORD)
     const {  email, password } = req.body;
     if(!email || !password){
       return res 
